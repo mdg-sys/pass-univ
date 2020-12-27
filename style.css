@@ -1,0 +1,331 @@
+@charset "UTF-8";
+
+/*---------------------------------------------------
+    全体構造
+---------------------------------------------------*/
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #4a4a4a;
+    line-height: 2.0;
+    background-color: #fff;
+    /*
+    background-image:
+      radial-gradient(#6f6f6f 20%, transparent 30%);
+    background-size: 10px 10px;*/
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.line {
+    background-color: #4a4a4a;
+    width     : 55px;
+    height    : 1px;
+    margin    : 25px auto 30px;
+ }
+
+ .inner {
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+ }
+
+.cta .inner {
+    padding-bottom: 50px;
+}
+
+.cta p {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.btn {
+     cursor: pointer;
+     color: #fff;
+     background-color:rgba(0, 197, 89, 1.0);
+     padding: 10px;
+     text-align: center;
+     width: 350px;
+     margin: 0 auto;
+     border-radius: 6px;
+     box-shadow:rgba(0, 145, 48, 1.0) 0px 10px
+}
+
+.btn a {
+    display: block;
+}
+
+.btn:active {
+    box-shadow: none;
+    position: relative;
+    top: 10px;
+}
+
+.wrap {
+    overflow: hidden;
+}
+
+/*---------------------------------------------------
+    ヘッダー
+---------------------------------------------------*/
+
+header {
+    text-align: center;
+    height: 37px;
+}
+
+header h3 {
+    margin: 0;
+    padding: 0;    
+}
+
+header .inner {
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------------------------------------------
+    メインビジュアル
+---------------------------------------------------*/
+
+.mainvisual {
+    background-image: url("images/header-2.jpg");
+    height: 50vh;
+    position: relative;
+}
+
+.mainvisual::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: ' ';
+}
+
+.mainvisual h1 {
+    font-size: 50px;
+    width: 1000px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+/*---------------------------------------------------
+    ヘッドコピー
+---------------------------------------------------*/
+
+.headcopy {
+    text-align: center;
+}
+
+.headcopy h2 {
+}
+
+.headcopy .inner span {
+    color: red;
+}
+
+.merit {
+    color: white;
+    background-image: url("images/straight-road.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+}
+
+.merit::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: ' ';
+}
+
+.merit p {
+    text-align: center;
+    width: 700px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    line-height: 2.3;
+}
+
+/*---------------------------------------------------
+    現状の悩み
+---------------------------------------------------*/
+
+.trouble {
+    background-image: url("images/jealous.jpg");
+    background-size: cover;
+    background-position: right;
+    height: 50vh;
+    position: relative;
+}
+
+.trouble::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: ' ';
+}
+
+.trouble .line {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 24%;
+    margin: 0 auto;
+}
+
+.trouble h3 {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.trouble ul {
+    text-align: left;
+    width: 550px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+    margin: 0 auto;
+}
+
+/*---------------------------------------------------
+    ベネフィット
+---------------------------------------------------*/
+
+.box {
+    width: 160px;
+    margin: 0 20px;
+}
+
+.box img {
+    height: 150px;
+    width: 150px;
+    object-fit: fill;
+}
+
+.box-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.benefit .inner {
+    padding-bottom: 50px;
+}
+
+/*---------------------------------------------------
+    プレゼント内容
+---------------------------------------------------*/
+
+.present {
+    background-image: url("images/present.jpg");
+    background-size: cover;
+    background-position: right;
+    height: 55vh;
+    position: relative;
+}
+
+.present::before {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: ' ';
+}
+
+.present p {
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+    margin: 0 auto;
+    line-height: 2.0;
+    width: 700px;
+}
+
+.present h3 {
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.present .line {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 22%;
+    margin: 0 auto;
+}
+
+/*---------------------------------------------------
+    限定性
+---------------------------------------------------*/
+
+.lim .inner {
+    padding-bottom: 50px;
+}
+
+/*---------------------------------------------------
+    ストーリー
+---------------------------------------------------*/
+
+.story {
+    background-color: #efefef;
+}
+
+.str-box {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/*---------------------------------------------------
+    FAQ
+---------------------------------------------------*/
+
+/*---------------------------------------------------
+    Call to Action
+---------------------------------------------------*/
+
