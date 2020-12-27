@@ -4,48 +4,8 @@
     全体構造
 ---------------------------------------------------*/
 
-html {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    color: #4a4a4a;
-    line-height: 2.0;
-    background-color: #fff;
-    /*
-    background-image:
-      radial-gradient(#6f6f6f 20%, transparent 30%);
-    background-size: 10px 10px;*/
-}
-
-h3 {
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.line {
-    background-color: #4a4a4a;
-    width     : 55px;
-    height    : 1px;
-    margin    : 25px auto 30px;
- }
-
- .inner {
-    margin: 0 auto;
-    padding: 30px 0;
-    text-align: center;
- }
-
-.wrap {
-    overflow: hidden;
+p {
+    width: 260px;
 }
 
 /*---------------------------------------------------
@@ -54,10 +14,11 @@ a {
 
 header {
     text-align: center;
-    height: 37px;
+    height: 26px;
 }
 
 header h3 {
+    font-size: 13px;
     margin: 0;
     padding: 0;    
 }
@@ -73,7 +34,8 @@ header .inner {
 
 .mainvisual {
     background-image: url("images/header-2.jpg");
-    height: 50vh;
+    background-size: cover;
+    height: 30vh;
     position: relative;
 }
 
@@ -88,14 +50,17 @@ header .inner {
 }
 
 .mainvisual h1 {
-    font-size: 50px;
+    font-size: 20px;
     width: 1000px;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 25%;
-    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
+}
+
+.mainvisual h1 .sp_br {
+    display: block;
 }
 
 /*---------------------------------------------------
@@ -104,6 +69,17 @@ header .inner {
 
 .headcopy {
     text-align: center;
+}
+
+.headcopy h2 {
+    font-size: 15px;
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.headcopy .sp_br {
+    display: none;
 }
 
 .headcopy img {
@@ -126,7 +102,7 @@ header .inner {
     background-image: url("images/straight-road.jpg");
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 80vh;
     position: relative;
 }
 
@@ -141,14 +117,18 @@ header .inner {
 }
 
 .merit p {
-    text-align: center;
-    width: 700px;
-    font-size: 20px;
+    text-align: left;
+    width: 260px;
+    font-size: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
     line-height: 2.3;
+}
+
+.merit .sp_br {
+    display: none;
 }
 
 /*---------------------------------------------------
@@ -158,8 +138,8 @@ header .inner {
 .trouble {
     background-image: url("images/jealous.jpg");
     background-size: cover;
-    background-position: right;
-    height: 50vh;
+    background-position: center;
+    height: 100vh;
     position: relative;
 }
 
@@ -178,7 +158,7 @@ header .inner {
     position: absolute;
     left: 0;
     right: 0;
-    top: 24%;
+    top: 17%;
     margin: 0 auto;
 }
 
@@ -192,12 +172,12 @@ header .inner {
 
 .trouble ul {
     text-align: left;
-    width: 550px;
+    width: 260px;
     color: #fff;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -40%);
     margin: 0 auto;
 }
 
@@ -207,7 +187,15 @@ header .inner {
 
 .box {
     width: 160px;
-    margin: 0 20px;
+    margin: 0 auto;
+}
+
+.box p {
+    width: 160px;
+}
+
+.box:last-child {
+    margin-bottom: 30px;
 }
 
 .box img {
@@ -217,8 +205,7 @@ header .inner {
 }
 
 .box-wrapper {
-    display: flex;
-    justify-content: center;
+    display: block;
 }
 
 .benefit .inner {
@@ -233,7 +220,7 @@ header .inner {
     background-image: url("images/present.jpg");
     background-size: cover;
     background-position: right;
-    height: 55vh;
+    height: 120vh;
     position: relative;
 }
 
@@ -250,12 +237,11 @@ header .inner {
 .present p {
     color: white;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 35%;
-    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
     line-height: 2.0;
-    width: 700px;
+    width: 260px;
 }
 
 .present h3 {
@@ -271,8 +257,12 @@ header .inner {
     position: absolute;
     left: 0;
     right: 0;
-    top: 22%;
+    top: 14%;
     margin: 0 auto;
+}
+
+.present .sp_br {
+    display: none;
 }
 
 /*---------------------------------------------------
@@ -367,7 +357,7 @@ header .inner {
      background-color:rgba(0, 197, 89, 1.0);
      padding: 10px;
      text-align: center;
-     width: 350px;
+     width: 260px;
      margin: 0 auto;
      border-radius: 6px;
      box-shadow:rgba(0, 145, 48, 1.0) 0px 10px
