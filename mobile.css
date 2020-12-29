@@ -52,9 +52,12 @@ header h3 {
 }
 
 .mainvisual h2 {
-    width: 100%;
     padding: 40px 0;
     text-align: center;
+}
+
+.mainvisual .inner {
+    padding: 0;
 }
 
 .merit p {
@@ -109,6 +112,10 @@ header h3 {
 
 .lim .sign span {
     font-size: 70px; /**/
+}
+
+.lim .sign .edge {
+    -webkit-text-stroke-width: 10px;
 }
 
 /*----------------------------------------------

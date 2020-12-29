@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    _::-webkit-full-page-media, _:future, :root body {
+        background-color: #eee;
+    }
+}
+
 /*----------------------------------------------
     全体構造
 ----------------------------------------------*/
@@ -131,11 +137,7 @@ header .inner {
     padding: 100px 0;
     margin: 0 auto;
     transform: translate(0, 0);
-}
-
-.mainvisual .inner {
-    padding: 0;
-    margin: 0;
+    width: 100%;
 }
 
 .mainvisual .sp_br {
