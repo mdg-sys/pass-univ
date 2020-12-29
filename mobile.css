@@ -1,386 +1,131 @@
 @charset "UTF-8";
 
-/*---------------------------------------------------
+@media (max-width:414px) {
+
+/*----------------------------------------------
     全体構造
----------------------------------------------------*/
-
-p {
-    width: 260px;
+----------------------------------------------*/
+ 
+ h1,h2,h3,h4 {
+    width: 80%;
+ }
+ 
+ h1 {
+    font-size: 15px;
+ }
+ 
+ h2 {
+    font-size: 15px;
 }
+ 
+ h3 {
+    font-size: 15px;
+}
+ 
+p, a {
+    font-size: 15px;
+ }
 
-/*---------------------------------------------------
+ li {
+    font-size: 15px;
+ }
+ 
+ .inner {
+    padding: 70px 5px;
+ }
+
+/*----------------------------------------------
     ヘッダー
----------------------------------------------------*/
-
-header {
-    text-align: center;
-    height: 26px;
-}
+----------------------------------------------*/
 
 header h3 {
-    font-size: 13px;
-    margin: 0;
-    padding: 0;    
+    width: 100%;
+    font-size: 12px;
 }
 
-header .inner {
-    padding: 0;
-    margin: 0;
-}
-
-/*---------------------------------------------------
+/*----------------------------------------------
     メインビジュアル
----------------------------------------------------*/
+----------------------------------------------*/
 
 .mainvisual {
-    background-image: url("images/header-2.jpg");
     background-size: cover;
-    height: 30vh;
-    position: relative;
 }
 
-.mainvisual::before {
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: ' ';
-}
-
-.mainvisual h1 {
-    font-size: 20px;
-    width: 1000px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.mainvisual h1 .sp_br {
-    display: block;
-}
-
-/*---------------------------------------------------
-    ヘッドコピー
----------------------------------------------------*/
-
-.headcopy {
+.mainvisual h2 {
+    width: 100%;
+    padding: 40px 0;
     text-align: center;
-}
-
-.headcopy h2 {
-    font-size: 15px;
-    width: 260px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.headcopy .sp_br {
-    display: none;
-}
-
-.headcopy img {
-    height: 300px;
-    object-fit: cover;
-}
-
-.introduce {
-    background-color: #efefef;
-    padding: 30px;
-    margin: 0 30px;
-}
-
-.headcopy .inner span {
-    color: red;
-}
-
-.merit {
-    color: white;
-    background-image: url("images/straight-road.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    position: relative;
-}
-
-.merit::before {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: ' ';
 }
 
 .merit p {
     text-align: left;
-    width: 260px;
-    font-size: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    line-height: 2.3;
 }
 
 .merit .sp_br {
     display: none;
 }
 
-/*---------------------------------------------------
-    現状の悩み
----------------------------------------------------*/
-
-.trouble {
-    background-image: url("images/jealous.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    position: relative;
-}
-
-.trouble::before {
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: ' ';
-}
-
-.trouble .line {
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 17%;
-    margin: 0 auto;
-}
-
-.trouble h3 {
-    color: #fff;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
-
-.trouble ul {
-    text-align: left;
-    width: 260px;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-55%, -40%);
-    margin: 0 auto;
-}
-
-/*---------------------------------------------------
-    ベネフィット
----------------------------------------------------*/
-
-.box {
-    width: 160px;
-    margin: 0 auto;
-}
-
-.box p {
-    width: 160px;
-}
-
-.box:last-child {
-    margin-bottom: 30px;
-}
-
-.box img {
-    height: 150px;
-    width: 150px;
-    object-fit: fill;
-}
+/*----------------------------------------------
+    特典
+----------------------------------------------*/
 
 .box-wrapper {
     display: block;
+    margin-top: 10px;
 }
 
-.benefit .inner {
-    padding-bottom: 50px;
+.box {
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-/*---------------------------------------------------
+.box:last-child {
+    margin-bottom: 40px;
+}
+
+/*----------------------------------------------
     プレゼント内容
----------------------------------------------------*/
-
-.present {
-    background-image: url("images/present.jpg");
-    background-size: cover;
-    background-position: right;
-    height: 120vh;
-    position: relative;
-}
-
-.present::before {
-    background-color: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: ' ';
-}
+----------------------------------------------*/
 
 .present p {
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    line-height: 2.0;
-    width: 260px;
-}
-
-.present h3 {
-    color: white;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
-
-.present .line {
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 14%;
-    margin: 0 auto;
+    text-align: left;
 }
 
 .present .sp_br {
     display: none;
 }
 
-/*---------------------------------------------------
-    限定性
----------------------------------------------------*/
+/*----------------------------------------------
+    限定
+----------------------------------------------*/
 
-.lim .inner {
-    padding-bottom: 50px;
+.lim .sign {
+    height: 200px; /**/
 }
 
-/*---------------------------------------------------
+.lim .sign p {
+    font-size: 20px; /**/
+}
+
+.lim .sign span {
+    font-size: 70px; /**/
+}
+
+/*----------------------------------------------
     ストーリー
----------------------------------------------------*/
+----------------------------------------------*/
 
 .story {
-    background-color: #efefef;
+    /*要素サイズ*/
+    background-size: 90%;
 }
 
-.story p {
-    width: 800px;
-    margin: 0 auto;
-}
-
-/*---------------------------------------------------
-    FAQ
----------------------------------------------------*/
-
-.faq {
-    background-color:#efefef;
-}
-
-.faq-wrapper {
-    width: 800px;
-    margin: 0 auto;
-}
-
-.faq .q-box {
-    display: flex;
-    justify-content: center;
-}
-
-.faq .a-box {
-    display: flex;
-    justify-content: center;
-}
-
-.question {
-    background-color: #4a4a4a;
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    text-align: center;
-    line-height: 40px;
-}
-
-.answer {
-    background-color: #8a8a8a;
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    text-align: center;
-    line-height: 40px;
-}
-
-.content {
-    text-align: left;
-    width: 500px;
-    margin-left: 10px;
-}
-
-.QandA {
-    margin: 30px 0;
-}
-
-/*---------------------------------------------------
+/*----------------------------------------------
     Call to Action
----------------------------------------------------*/
-
-.cta .inner {
-    padding-bottom: 50px;
-}
-
-.cta p {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
+----------------------------------------------*/
 
 .btn {
-     cursor: pointer;
-     color: #fff;
-     background-color:rgba(0, 197, 89, 1.0);
-     padding: 10px;
-     text-align: center;
-     width: 260px;
-     margin: 0 auto;
-     border-radius: 6px;
-     box-shadow:rgba(0, 145, 48, 1.0) 0px 10px
+     width: 250px;
 }
 
-.btn a {
-    display: block;
-}
-
-.btn:active {
-    box-shadow: none;
-    position: relative;
-    top: 10px;
-}
-
-/*---------------------------------------------------
-    フッター
----------------------------------------------------*/
-
-footer {
-    text-align: center;
-    background-color: #4a4a4a;
-    color: #fff;
-    height: 60px;
-    line-height: 60px;
 }
