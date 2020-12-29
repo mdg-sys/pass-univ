@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    _::-webkit-full-page-media, _:future, :root body {
-        background-color: #eee;
-    }
-}
-
 /*----------------------------------------------
     全体構造
 ----------------------------------------------*/
