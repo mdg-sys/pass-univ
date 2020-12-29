@@ -422,7 +422,7 @@ header .inner {
     top 99% left 50%; /* 8 */
 
     /*要素サイズ*/
-    background-size: 80%;
+    background-size: 50%;
 
     /*リピート*/
     background-repeat: no-repeat;
