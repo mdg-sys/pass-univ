@@ -52,8 +52,10 @@ header h3 {
 }
 
 .mainvisual h2 {
+    width: 80%;
     padding: 40px 0;
-    text-align: center;
+    text-align: left;
+    font-size: 24px;
 }
 
 .mainvisual .inner {
@@ -118,6 +120,10 @@ header h3 {
     -webkit-text-stroke-width: 10px;
 }
 
+.lim .msg-box {
+    text-align: left;
+}
+
 /*----------------------------------------------
     ストーリー
 ----------------------------------------------*/
@@ -125,6 +131,22 @@ header h3 {
 .story {
     /*要素サイズ*/
     background-size: 90%;
+}
+
+.story p {
+    text-align: left;
+}
+
+.story img {
+    width: 100%;
+}
+
+.story .sp_br {
+    display: none;
+}
+
+.message p {
+    text-align: left;
 }
 
 /*----------------------------------------------

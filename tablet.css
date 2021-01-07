@@ -36,9 +36,12 @@
     ストーリー
 ----------------------------------------------*/
 
-.story {
-   /*要素サイズ*/
-   background-size: 80%;
+.story img {
+   width: 80%;
+}
+
+.story .sp_br {
+   display: none;
 }
 
 }

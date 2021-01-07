@@ -84,7 +84,7 @@ html {
 
  .sect {
      background-color: #cfcfcf;
-     width: 500px;
+     width: 80%;
      height: 1px;
      margin: 30px auto 30px;
  }
@@ -389,43 +389,15 @@ header .inner {
 
 .story {
     background-color: #efefef;
+    position: relative;
 }
 
 .story p {
     margin: 0 auto;
-    color: black;
 }
 
-.story {
-    position: relative;
-
-    /*要素*/
-    background:  
-    url("images/school.jpg"), /* 1 */
-    url("images/headache.jpg"), /* 2 */
-    url("images/depress.jpg"), /* 3 */
-    url("images/study.jpg"), /* 4 */
-    url("images/walk-alone.jpg"), /* 5 */
-    url("images/surprised.jpg"), /* 6 */
-    url("images/teaching-1.jpg"), /* 7 */
-    url("images/congratulation.jpg"); /* 8 */
-
-    /*配置*/
-    background-position:
-    top 2.2% left 50%, /* 1 */
-    top 28.5% left 50%, /* 2 */
-    top 18% left 50%, /* 3 */
-    top 42% left 50%, /* 4 */
-    top 57.5% left 50%, /* 5 */
-    top 69% left 50%, /* 6 */
-    top 82% left 50%, /* 7 */
-    top 99% left 50%; /* 8 */
-
-    /*要素サイズ*/
-    background-size: 50%;
-
-    /*リピート*/
-    background-repeat: no-repeat;
+.story img {
+    width: 70%;
 }
 
 .story::before {
