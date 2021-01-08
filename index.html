@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首席卒提供！数学偏差値60以上の心得</title>
+
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
 
-    <link rel="stylesheet" href="desktop.css" media="(min-width:769px)">
-    <link rel="stylesheet" href="tablet.css"  media="(max-width:768px) and (min-width: 415px)">
-    <link rel="stylesheet" href="mobile.css"  media="(max-width:414px)">
+    <!-- jquery -->
+    <script src = "./jquery-3.5.1.min.js"></script>
 
+    <script>
+        $(function(){　//$(function()｛｝はDOMの読み込みが終わったら中の処理をするという意味
+            $(window).scroll(function (){
+                $('.fadein').each(function(){
+                    var targetElement = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll > targetElement - windowHeight + 200){
+                        $(this).css('opacity','1');
+                        $(this).css('transform','translateY(0)');
+                    }
+                });
+            });
+        });
+
+    </script>
 </head>
 <body>
     <div class = "wrap">
@@ -32,9 +51,16 @@
         <section class = "mainvisual">
             <div class = "inner">
                 <div class = "txt-box">
-                    <h2>三角形の面積すら計算できなかったのに<br>首席で卒業するレベルに！？</h2>
+                    <h2>三角形の面積すら計算できなかったのに<br><span>首席</span>で卒業するレベルに！？</h2>
                 </div>
             </div>
+
+            <script>
+                $(function() {
+                    $("h2").css("opacity", "1");
+                    $("h2").css("transform", "translateY(0)");
+                });
+            </script>
         </section>
 
         <!----------------------------------------------------------
@@ -218,6 +244,9 @@
                             周りのクラスメイトも同じような結果であることを期待しましたが、<br class = "sp_br">その期待はいとも簡単に打ち砕かれることに…。<br>
                             <br>
                             <br>
+                            <figure><img src="images/isolated.jpg" alt="" class  = "fadein"><br></figure>
+                            <br>
+                            <br>
                             というのもクラスメイトの多くはハイレベル県立高校の不合格者として流れてきていたのです。<br>
                             <br>
                             <br>
@@ -239,7 +268,7 @@
                             そして、孤立していくようになったのです。<br>
                             <br>
                             <br>
-                            <img src="images/depress.jpg" alt=""><br>
+                            <figure><img src="images/depress.jpg" alt="" class  = "fadein"><br></figure>
                             <br>
                             <br>
                             どうやって勉強していいかわからないので、とにかく愚直に参考書を開いて、<br class = "sp_br">問題を解いてみては解説を読みの繰り返しを。<br>
@@ -266,7 +295,7 @@
                             「自分は毎日頑張っている…。きっと前回より点数は取れる！」<br>
                             <br>
                             <br>
-                            <img src="images/headache.jpg" alt=""><br>
+                            <figure><img src="images/headache.jpg" alt="" class = "fadein"><br></figure>>
                             <br>
                             <br>
                             しかし頑張りは報われることなく、模擬試験の成績はというと…結局5割も取れずにあえなく終了。<br>
@@ -304,7 +333,7 @@
                             「これで成績が伸びる!」とその時は信じていたのです。<br>
                             <br>
                             <br>
-                            <img src="images/study.jpg" alt=""><br>
+                            <figure><img src="images/study.jpg" alt="" class = "fadein"><br></figure>
                             <br>
                             <br>
                             しかし、一向に数学の模擬試験の成績は伸びませんでした。<br>
@@ -338,7 +367,7 @@
                             といった最悪な未来が頭をよぎり、絶望感に苛まれていました。<br>
                             <br>
                             <br>
-                            <img src="images/walk-alone.jpg" alt=""><br>
+                            <figure><img src="images/walk-alone.jpg" alt="" class = "fadein"><br></figure>
                             <br>
                             <br>
                             この状態が高校の2年の冬まで続いたそんなとき…運命の日がやってきたのです。<br>
@@ -365,7 +394,7 @@
                             <br>
                             しかし、そのブログに書かれていた数学の勉強法が今までの自分の常識を180度変えてくれるとは世にも思っていませんでした。<br>
                             <br>
-                            <br><img src="images/surprised.jpg" alt=""><br>
+                            <figure><br><img src="images/surprised.jpg" alt="" class ="fadein"><br></figure>
                             <br>
                             <br>
                             そこには、これまで見たこともなかったような勉強方法が展開され、<br class = "sp_br">これまで勉強してきたことがまるで本当に無駄だったかのように
@@ -386,7 +415,7 @@
                             <br>
                             そして、慣れてくるとスラスラと解答を書けていく自分がまるで当時流行っていたテレビドラマ『ガリレオ』に出てくる湯川学であるかのようで、<br>
                             <br>
-                            <br><img src="images/teaching-1.jpg" alt=""><br>
+                            <figure><br><img src="images/teaching-1.jpg" alt="" class = "fadein"><br></figure>
                             <br>
                             <br>
                             ✨できる自分がすごいカッコいい✨<br>
@@ -427,7 +456,7 @@
                             また、これは余談かもしれませんが、同様の勉強法を大学でも継続した結果、<br class = "sp_br">首席で卒業という境地まで達することができ、自分に自信を持てるきっかけにまでなったのです！<br>
                             <br>
                             <br>
-                            <img src="images/light-2.jpg" alt=""><br>
+                            <figure><img src="images/light-2.jpg" alt="" class = "fadein"><br></figure>
                             <br>
                             <br>
                         </p>
@@ -483,7 +512,7 @@
                         </div>
                         <div class = "a-box">
                             <p class = "answer">A.</p>
-                            <p class = "content">可能です。しかし、理系に特化したカリキュラムであるため申し込みが殺到した際には、お断りすることもございますので予めご了承頂ますようお願い申し上げます。</p>
+                            <p class = "content">可能です。しかし、理系に特化したカリキュラムであることを予めご理解いただけますようお願い申し上げます。</p>
                         </div>
                     </div>
                     <div class = "sect"></div>

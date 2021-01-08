@@ -93,6 +93,12 @@ html {
      overflow: hidden;
  }
 
+ .fadein { /*jQuery用*/
+    opacity : 0;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
 /*----------------------------------------------
     ヘッダー
 ----------------------------------------------*/
@@ -132,10 +138,17 @@ header .inner {
     margin: 0 auto;
     transform: translate(0, 0);
     width: 100%;
+    opacity : 0;
+    transform: translateY(20px);
+    transition: all 1s;
 }
 
 .mainvisual .sp_br {
     display: none;
+}
+
+.mainvisual span {
+    color: red;
 }
 
 /*----------------------------------------------
