@@ -93,6 +93,20 @@ html {
      overflow: hidden;
  }
 
+.marker-line { /*jQuery用*/
+    background: -webkit-linear-gradient(left, rgba(231, 110, 110, 0.411) 50%, transparent 50%);
+    background: -moz-linear-gradient(left, rgba(231, 110, 110, 0.411) 50%, transparent 50%);
+    background: linear-gradient(left, rgba(231, 110, 110, 0.411) 50%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: 200% .8em; 
+    background-position: 100% .5em;
+    transition: 2s;
+}
+
+.marker-line.is-active{ /*jQuery用*/
+    background-position: 0% .5em;
+}
+
  .fadein { /*jQuery用*/
     opacity : 0;
     transform: translateY(20px);

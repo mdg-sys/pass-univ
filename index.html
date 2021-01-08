@@ -14,13 +14,14 @@
     <script src = "./jquery-3.5.1.min.js"></script>
 
     <script>
+        // 要素フェードイン
         $(function(){　//$(function()｛｝はDOMの読み込みが終わったら中の処理をするという意味
             $(window).scroll(function (){
                 $('.fadein').each(function(){
                     var targetElement = $(this).offset().top;
                     var scroll = $(window).scrollTop();
                     var windowHeight = $(window).height();
-                    if (scroll > targetElement - windowHeight + 200){
+                    if (scroll > targetElement - windowHeight + 170){
                         $(this).css('opacity','1');
                         $(this).css('transform','translateY(0)');
                     }
@@ -28,7 +29,19 @@
             });
         });
 
+        // マーカーライン
+        $(window).scroll(function (){
+            $(".js-markerScrollAnimation").each(function(){
+                var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+                var scroll = $(window).scrollTop(); //スクロールの位置を取得
+                var windowHeight = $(window).height(); //ウインドウの高さを取得
+                if (scroll > position - windowHeight + 200){ //スクロール位置が要素の位置を過ぎたとき
+                    $(this).addClass('is-active'); //クラス「active」を与える
+                }
+            });
+        });
     </script>
+
 </head>
 <body>
     <div class = "wrap">
@@ -129,19 +142,19 @@
                 <h3>そんな悩みも一気に解決！</h3>
                 <div class = "line"></div>
                 <div class = "box-wrapper">
-                    <div class = "box">
+                    <div class = "box fadein">
                         <img src="images/map.png" alt="">
                         <p>高校数学の全体像が分かり、勉強の効率化が図れます！</p>
                     </div>
-                    <div class = "box">
+                    <div class = "box fadein">
                         <img src="images/up.png" alt="">
                         <p>最速の成績の伸ばし方が分かります！</p>
                     </div>
-                    <div class = "box">
+                    <div class = "box fadein">
                         <img src="images/jealous.png" alt="">
                         <p>学業に関する悩み相談に対応いたします！</p>
                     </div>
-                    <div class = "box">
+                    <div class = "box fadein">
                         <img src="images/present.png" alt="">
                         <p>学習プロセスに関してまとめた無料レポートをプレゼントいたします！</p>
                     </div>
@@ -223,7 +236,7 @@
         <section class = "story">
             <div class = "inner">
                 <div class = "txt-box">
-                    <h3>私も実はダメダメでした</h3>
+                    <h3>私も実は底辺だったんです…</h3>
                     <div class = "line"></div>
                         <p>
                             私は地方に住むごく普通の高校生でした。<br>
@@ -232,7 +245,7 @@
                             中学生のときは全く勉強せず、入学したかった県立高校の受験は失敗…。<br>
                             <br>
                             <br>
-                            通っていたのは志望度が高くなく、あまり偏差値も良くないCランク私立高校でした。<br>
+                            通っていたのは志望度が高くなく、あまり<strong class = "marker-line js-markerScrollAnimation">偏差値高くないCランク私立高校</strong>でした。<br>
                             <br>
                             <br>
                             世間知らずの私は、「自分と同じような人がこの高校に集まってくるんでしょ」と<br class = "sp_br">楽観的な考え方をしていました。<br>
@@ -258,7 +271,7 @@
                             なんと入学時点で6~7割が普通でした。<br>
                             <br>
                             <br>
-                            そのとき初めて、自分がいかに「底辺」にいるのかを思い知らされるきっかけになりました。<br>
+                            そのとき初めて、<strong class = "marker-line js-markerScrollAnimation">自分がいかに「底辺」にいるのか</strong>を思い知らされるきっかけになりました。<br>
                             <br>
                             <br>
                             それ以来は、自分が「バカ」だと思われたくないという考えがはたらきかけ、<br class = "sp_br">分からないことがあっても誰にも頼れないようになり、<br>
@@ -275,7 +288,7 @@
                         <p>
                             <br>
                             <br>
-                            どうやって勉強していいかわからないので、とにかく愚直に参考書を開いて、<br class = "sp_br">問題を解いてみては解説を読みの繰り返しを。<br>
+                            <strong class = "marker-line js-markerScrollAnimation">どうやって勉強していいかわからない</strong>ので、とにかく愚直に参考書を開いて、<br class = "sp_br">問題を解いてみては解説を読みの繰り返しを。<br>
                             <br>
                             <br>
                             誰にも相談できず、頼れるのはGoogle検索やYouTubeのみ。<br>
@@ -293,7 +306,7 @@
                             学習進度のロスを勉強時間を増やすことによりカバーするといった勉強をしていました。<br>
                             <br>
                             <br>
-                            毎日就寝時刻が深夜2時になることがしばしば…<br>
+                            <strong class = "marker-line js-markerScrollAnimation">就寝時刻が深夜2時</strong>になることがしばしば…<br>
                             <br>
                             <br>
                             「自分は毎日頑張っている…。きっと前回より点数は取れる！」<br>
@@ -311,13 +324,13 @@
                             クラスメイトに言われた一撃が私をどん底に叩きつけたのです。<br>
                             <br>
                             <br>
-                            「その点数じゃ大学合格すら難しいでしょ。しかも数学できないのに理系選択してもついていけないよ。」<br>
+                            <strong>「その点数じゃ大学合格すら難しいでしょ。しかも数学できないのに理系選択してもついていけないよ。」</strong><br>
                             <br>
                             <br>
                             そのクラスメイトは全然勉強しているように見える人ではありませんでしたが、<br class = "sp_br">自分より高い点数をとっていました。<br>
                             <br>
                             <br>
-                            とても惨めな気分で、自分は進学校に入学したことや、国公立大学を目指すことすら<br class = "sp_br">おこがましいと思うまで自信喪失してしまいました…<br>
+                            とても惨めな気分で、<strong class = "marker-line js-markerScrollAnimation">自分は進学校に入学したことや、国公立大学を目指すことすら<br class = "sp_br">おこがましいと思うまで自信喪失</strong>してしまいました…<br>
                             <br>
                             <br>
                             そうはいうものの、高校に通っている間は親に負担をかけているという事情があったために、<br class = "sp_br">
@@ -330,10 +343,10 @@
                             そこでとにかく先生の言われる通り実践しようと思ったのです。<br>
                             <br>
                             <br>
-                            出された課題はしっかりこなし、学校から支給された「参考書・問題集」を<br class = "sp_br">使って問題演習をこなしていきました。<br>
+                            出された課題はしっかりこなし、学校から支給された<strong class = "marker-line js-markerScrollAnimation">「参考書・問題集」</strong>を<br class = "sp_br">使って問題演習をこなしていきました。<br>
                             <br>
                             <br>
-                            また、先生からの評価が高い初学者向けの参考書を購入し、「全ページ読んではノートに写して」を<br class = "sp_br">一通り実践していました。<br>
+                            また、先生からの評価が高い初学者向けの参考書を購入し、<strong class = "marker-line js-markerScrollAnimation">「全ページ読んでノートに写す」</strong>ことを<br class = "sp_br">一通り実践していました。<br>
                             <br>
                             <br>
                             「これで成績が伸びる!」とその時は信じていたのです。<br>
@@ -347,13 +360,13 @@
                             しかし、一向に数学の模擬試験の成績は伸びませんでした。<br>
                             <br>
                             <br>
-                            それもそのはずで、先生の言われたとおりに、とにかく問題演習を行いましたが、<br class = "sp_br">分からない問題は結局わからないまま『放置状態』にしてしまっていたのです。<br>
+                            それもそのはずで、先生の言われたとおりに、とにかく問題演習を行いましたが、<br class = "sp_br"><strong class = "marker-line js-markerScrollAnimation">分からない問題は結局わからないまま『放置状態』</strong>にしてしまっていたのです。<br>
                             <br>
                             <br>
                             「完答はできなかったけど、一度解答見たから次は大丈夫でしょ！」と<br class = "sp_br">自分に言い聞かせそのままの状態になっていたのです。<br>
                             <br>
                             <br>
-                            また、評価が高い参考書の典型問題をすべて写すことを実践してみた結果はと言うと…<br class = "sp_br">結局写しただけで頭に何一つ残っていませんでした。<br>
+                            また、評価が高い参考書の典型問題をすべて写すことを実践してみた結果はと言うと…<br class = "sp_br"><strong class = "marker-line js-markerScrollAnimation">結局写しただけで頭に何一つ残っていません</strong>でした。<br>
                             <br>
                             <br>
                             他にも、「何度も問題集を周回」してセンスを身につけようと実行に移してみましたが、<br class = "sp_br">問題演習にかなり時間が掛かってしまうために、1周するのに半年以上かかってしまう始末。<br>
@@ -365,11 +378,11 @@
                             そしてそれ以上に、<br>
                             <br>
                             <br>
-                            「みんなとは違うコースを歩むことになって恥ずかしい…」<br>
+                            <strong>「みんなとは違うコースを歩むことになって恥ずかしい…」</strong><br>
                             <br>
-                            「また1年、過酷な勉強漬けの毎日を送らないといけなくなるかもしれない…」<br>
+                            <strong>「また1年、過酷な勉強漬けの毎日を送らないといけなくなるかもしれない…」</strong><br>
                             <br>
-                            「浪人したら、予備校に通うことになって高額な費用が…家計がボロボロになるかもしれない…」<br>
+                            <strong>「浪人したら、予備校に通うことになって高額な費用が…家計がボロボロになるかもしれない…」</strong><br>
                             <br>
                             <br>
                             といった最悪な未来が頭をよぎり、絶望感に苛まれていました。<br>
@@ -389,10 +402,10 @@
                             自分はこのまま数学ができずに、また高校受験のときのように志望校のレベルを下げなければならないのだろうか…<br>
                             <br>
                             <br>
-                            そんなことを常々考えながら、ボーっとスマートフォンでネットサーフィンしていると、偶然あるサイトに出会ったのです。<br>
+                            そんなことを常々考えながら、ボーっとスマートフォンでネットサーフィンしていると、偶然<strong class = "marker-line js-markerScrollAnimation">あるサイト</strong>に出会ったのです。<br>
                             <br>
                             <br>
-                            それは、今は閉鎖されている『東大生のブログ』でした。<br>
+                            それは、今は閉鎖されている<strong class = "marker-line js-markerScrollAnimation">『東大生のブログ』</strong>でした。<br>
                             <br>
                             <br>
                             が…<br>
@@ -402,7 +415,7 @@
                             「どうせ同じような事が書いてあるんだろう」と期待せずに見てみることにしたのです。<br>
                             <br>
                             <br>
-                            しかし、そのブログに書かれていた数学の勉強法が今までの自分の常識を180度変えてくれるとは世にも思っていませんでした。<br>
+                            しかし、そのブログに書かれていた数学の勉強法が今までの自分の<strong class = "marker-line js-markerScrollAnimation">常識を180度変えてくれる</strong>とは世にも思っていませんでした。<br>
                             <br>
                         </p>
                             <figure><br><img src="images/surprised.jpg" alt="" class ="fadein"><br></figure>
@@ -413,7 +426,7 @@
                             スマートな切り口で説明がなされていました。<br>
                             <br>
                             <br>
-                            今思えば、当然なことなのですが、当時の私はその東大生が綴っていた「ある視点」が欠けていたのです。<br>
+                            今思えば、当然なことなのですが、当時の私はその東大生が綴っていた<strong class = "marker-line js-markerScrollAnimation">「ある視点」</strong>が欠けていたのです。<br>
                             <br>
                             <br>
                             その視点を常に念頭に置くことによって、私も数学に対する認識が徐々に変わっていきました。<br>
@@ -422,17 +435,17 @@
                             そのサイトで説明されていた勉強法があまりにも私の中では革新的であり、<br class = "sp_br">理解に結びつく実感が湧いてくるため、この方法で勉強を続行したところ…<br>
                             <br>
                             <br>
-                            これまで以上に解ける問題がどんどん増えていったのです！<br>
+                            <strong>これまで以上に解ける問題がどんどん増えていったのです！</strong><br>
                             <br>
                             <br>
-                            そして、慣れてくるとスラスラと解答を書けていく自分がまるで当時流行っていたテレビドラマ『ガリレオ』に出てくる湯川学であるかのようで、<br>
+                            そして、慣れてくるとスラスラと解答を書けていく自分がまるで当時流行っていたテレビドラマ<strong>『ガリレオ』に出てくる湯川学</strong>であるかのようで、<br>
                             <br>
                         </p>
                             <figure><br><img src="images/teaching-1.jpg" alt="" class = "fadein"><br></figure>
                         <p>
                             <br>
                             <br>
-                            ✨できる自分がすごいカッコいい✨<br>
+                            <strong>✨できる自分がすごいカッコいい✨</strong><br>
                             <br>
                             <br>
                             段々と数学の面白さが分かり始めたときでした。<br>
@@ -441,7 +454,7 @@
                             そして、成績に伸びしろがあることを実感し、更に勉強に集中できるように！<br>
                             <br>
                             <br>
-                            結果として、直近で控えていた模擬試験でも5割を超え、<br class = "sp_br">勉強法改革から約2ヶ月で数学の偏差値を50から65まで伸ばすことに成功したのです。<br>
+                            結果として、直近で控えていた模擬試験でも5割を超え、<br class = "sp_br">勉強法改革から<strong class = "marker-line js-markerScrollAnimation">約2ヶ月で数学の偏差値を50から65まで伸ばすことに成功</strong>したのです。<br>
                             <br>
                             <br>
                             数学の成績がある程度軌道に乗ってくると、別のところにも恩恵を受けるようになりました。<br>
@@ -454,20 +467,20 @@
                             と一目置かれるようにもなりました。<br>
                             <br>
                             <br>
-                            そのまま紆余曲折もありましたが総合成績を伸ばしていくことで、<br class = "sp_br">高校3年生の大学入試前の時期には学年でもトップ5には入るレベルに到達できたのです。<br>
+                            そのまま紆余曲折もありましたが総合成績を伸ばしていくことで、<br class = "sp_br">高校3年生の大学入試前の時期には<strong class = "marker-line js-markerScrollAnimation">学年でもトップ5には入るレベルに到達できた</strong>のです。<br>
                             <br>
                             <br>
-                            そして、この頃には、旧帝大の入試過去問題 (数学) が解けるようになり、<br class = "sp_br">第1志望の岡山大学の合格レベルは余裕のA判定になっていました。<br>
+                            そして、この頃には、旧帝大の入試過去問題 (数学) が解けるようになり、<br class = "sp_br">第1志望だった岡山大学の合格レベルは余裕のA判定にまですることができていました。<br>
                             <br>
                             <br>
                             これらのことが自信へと繋がり「こんな自分でも、正しいやり方で攻めていけば、<br class = "sp_br">できなかったことも必ずできるようになる！」<br class = "sp_br">
-                            と前向きなマインドを手に入れたのです。<br>
+                            と<strong class = "marker-line js-markerScrollAnimation">前向きな精神力</strong>を手に入れたのです！<br>
                             <br>
                             <br>
                             もちろん結果的には、合格A判定というだけでなくその第1志望の岡山大学に合格し、<br class = "sp_br">私は既に卒業いたしましたがすばらしいキャンパスライフを謳歌してまいりました！<br>
                             <br>
                             <br>
-                            また、これは余談かもしれませんが、同様の勉強法を大学でも継続した結果、<br class = "sp_br">首席で卒業という境地まで達することができ、自分に自信を持てるきっかけにまでなったのです！<br>
+                            また、これは余談かもしれませんが、同様の勉強法を大学でも継続した結果、<br class = "sp_br">首席で卒業という境地まで達することができ、<strong class = "marker-line js-markerScrollAnimation">自分に自信を持てるきっかけにまでなった</strong>のです！<br>
                             <br>
                             <br>
                             <figure><img src="images/light-2.jpg" alt="" class = "fadein"><br></figure>
