@@ -261,7 +261,7 @@ header .inner {
     list-style: inside;
     text-align: left;
     line-height: 2.0;
-    width: 80%;
+    width: 64%;
 }
 
 .trouble ul {
@@ -425,6 +425,9 @@ header .inner {
 
 .story img {
     width: 70%;
+    border: 10px solid;
+    border-color: white;
+    box-shadow: 10px 10px 20px;
 }
 
 .story::before {
@@ -514,10 +517,6 @@ header .inner {
     text-align: left;
 }
 
-.QandA {
-
-}
-
 /*----------------------------------------------
     Call to Action
 ----------------------------------------------*/
@@ -553,6 +552,10 @@ header .inner {
     box-shadow: none;
     position: relative;
     top: 10px;
+}
+
+.btn:hover {
+    background-color: rgba(0, 197, 89, 0.8);
 }
 
 /*----------------------------------------------
